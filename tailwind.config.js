@@ -12,10 +12,11 @@ module.exports = {
     theme: {
         extend: {
             fontFamily: {
-                sans: ['Nunito', ...defaultTheme.fontFamily.sans],
+                serif: ['Noto Serif', ...defaultTheme.fontFamily.serif],
+                sans: ['Noto Sans', ...defaultTheme.fontFamily.sans],
             },
         },
     },
 
-    plugins: [require('@tailwindcss/forms')],
+    plugins: [require('@tailwindcss/forms'), require('@tailwindcss/aspect-ratio')],
 };
